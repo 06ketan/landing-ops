@@ -1,0 +1,13 @@
+{
+  "name": "landing",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev:substack": "pnpm --filter substack-ops dev",
+    "dev:medium": "pnpm --filter medium-ops dev",
+    "build:substack": "pnpm --filter substack-ops build",
+    "build:medium": "pnpm --filter medium-ops build",
+    "build": "pnpm -r build"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
