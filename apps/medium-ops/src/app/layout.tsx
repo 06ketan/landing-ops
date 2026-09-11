@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Inter, Instrument_Serif } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -91,6 +92,7 @@ export default function RootLayout({
           />
           {children}
         </div>
+        <Script src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4672424c21f8488489d722f4129141a8"}' strategy="afterInteractive" />
       </body>
     </html>
   );
